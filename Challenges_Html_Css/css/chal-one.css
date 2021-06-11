@@ -1,0 +1,205 @@
+/* Start Global Rules */
+* {
+    box-sizing: border-box;
+}
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }  
+}
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    } 
+}
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    } 
+}
+/* End Global Rules */
+/*  Start The Grid */
+body {
+    display: grid;
+    grid-template-columns:repeat(3, 1fr) ;
+    grid-template-rows: repeat(4,auto) ;
+    grid-template-areas: 
+    "ck sp pa"
+    "ck mu pa"
+    "av mu pa"
+    "av mu la" ;
+    gap: 10px;
+    padding: 45px;
+    margin: 30px;
+}
+/* Start the Div COOK */
+.cook {
+    grid-area: ck;
+    background-color: #ffd54f;
+    color: white;
+    font-family: system-ui;
+    margin: 10px;
+    line-height: 1.6;
+    position: relative;
+}
+.cook::before {
+    content: "NEWS";
+    width: 60px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #2f4242;
+    position: absolute;
+    top: 25px;
+    left: 325px;
+    text-align: center;
+    line-height: 180%;
+    font-weight: 200;
+}
+/* End the Div COOK */
+/* Start the Div ACTIVITIES */
+.Actv {
+    grid-area: av;
+    background-color: #66bb6a;
+    color: white;
+    font-family: system-ui;
+    margin: 10px;
+    line-height: 1.6;
+}
+.Actv::before {
+    content: "NEWS";
+    width: 60px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #2f4242;
+    position: absolute;
+    top: 620px;
+    left: 410px;
+    text-align: center;
+    line-height: 180%;
+    font-weight: 200;
+}
+/* End the Div ACTIVITIES */
+/* Start the Seperit Div */
+.sper {
+    grid-area: sp;
+    background-color: coral;
+    color: white;
+    padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    margin: 10px;
+    line-height: 1.6;
+}
+.sper p {
+    font-size: 20px;
+    font-weight: 100;
+}
+.sper span {
+    font-size: small;
+}
+.sper i {
+    color: #0000001f;
+    margin: 6px;
+}
+/* End the Seperit Div */
+/* Start the MUSIC ACTIVITIES */
+.Music {
+    grid-area: mu;
+    background-color: #e57373;
+    color: white;
+    font-family: system-ui;
+    margin: 10px;
+    line-height: 1.6;
+}
+.Music::before {
+    content: "NEWS";
+    width: 60px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #2f4242;
+    position: absolute;
+    top: 308px;
+    left: 845px;
+    text-align: center;
+    line-height: 180%;
+    font-weight: 200;
+}
+/* End the MUSIC ACTIVITIES */
+/* Start the SCHOOL PARTY */
+.party {
+    grid-area: pa;
+    background-color: #00bcd4;
+    color: white;
+    font-family: system-ui;
+    margin: 10px;
+    line-height: 1.6;
+}
+.party::before {
+    content: "NEWS";
+    width: 60px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #2f4242;
+    position: absolute;
+    top: 110px;
+    left: 958px;
+    text-align: center;
+    line-height: 180%;
+    font-weight: 200;
+}
+.party img {
+    height: 250px;
+}
+/* End the SCHOOL PARTY */
+/* Start the LINK */
+.last {
+    grid-area: la;
+    background-color: #ce93d8;
+    color: white;
+    padding: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    margin: 10px;
+    text-align: center;
+}
+.last a {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    padding: 30px;
+    line-height: 1.6;
+    padding-left: 0;
+    text-decoration: none;
+}
+.last i {
+    color: white;
+}
+/* End the LINK */
+/* End The Grid */
+
+h3 {
+    font-weight: 300;
+    padding-left: 15px;
+}
+img {
+    width: 100%;
+}
+input {
+    color: white;
+    background-color: #ffffff00;
+    border-radius: 5px;
+    height: 30px;
+    border-color: #00000012;
+    padding: 6px;
+    box-shadow: inset -12px -7px 20px 20px #00000012 ;
+    font-weight: normal;
+    font-size: 12px;
+    margin: 15px;
+}
+p {
+    padding: 25px;
+    font-size: 10px;
+}
