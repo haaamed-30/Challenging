@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+}
+/* Start Main div */
+.main {
+    width: 806px;
+    height: 150px;
+    background-color: #0ca9a6;
+    color: white;
+    margin: 25% auto;
+}
+.main h3 {
+    text-align: center;
+    font-family: system-ui;
+    font-weight: 200;
+    font-size: 22px;
+    line-height: 0.5;
+    padding-top: 16px;
+}
+.main p {
+    text-align: center;
+    font-size: 12px;
+    font-family: system-ui;
+    font-weight: 100;
+    font-style: italic;
+    line-height: 0;
+}
+.main .search {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    background-color: black;
+    width: 800px;
+    height: 50px;
+    padding: 22px 27px 20px 0;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 3px;
+    left: 3px;
+}
+.main h3 {
+  
+
+}
+/* End Main div */
+
+/* secenad Div */
+.search .searchp {
+    color: white;
+    padding: 10px;
+    background-color: #0ca9a6;
+    text-align: center;
+    line-height: 0;
+    border-radius: 2px;
+    height: 26px;
+    text-decoration: none;
+    border: #0ca9a6 solid;
+    margin-left: 10px;
+    font-size: 10px;
+}
+.search input {
+    height: 27.25px;
+    margin-left: 30px;
+    font-size: 12px;
+}
+.search select {
+    height: 27px;
+    margin-left: 10px;
+    color: #00000078;
+}
+.mx {
+    padding: 10px;
+    text-align: left;
+    line-height: 0;
+}
+.search::before {
+    content: "$";
+    width: 22px;
+    height: 22px;
+    background-color: #eaeaea;
+    position: absolute;
+    top: 12.70px;
+    left: 517px;
+    text-align: center;
+    line-height: 2;
+    color: #00000078;
+    font-size: 12px;
+    border: solid 2px #0000000d;
+    border-radius: 1px;
+    padding-top: 0.25px;
+}
+.mn {
+    padding: 10px;
+    text-align: left;
+    line-height: 0 
+}
+.search::after {
+    content: "$";
+    width: 22px;
+    height: 22px;
+    background-color: #eaeaea;
+    position: absolute;
+    top: 12.70px;
+    left: 337px;
+    text-align: center;
+    line-height: 2;
+    color: #00000078;
+    font-size: 12px;
+    border: solid 2px #0000000d;
+    border-radius: 1px;
+    padding-top: 0.25px;
+}
+/* Secenad Div */
