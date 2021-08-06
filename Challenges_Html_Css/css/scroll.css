@@ -1,0 +1,34 @@
+/* Global Rules */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    font-family: sans-serif;
+}
+/* The End */
+/* Scrolling */
+.two {
+    margin-top: 2000px;
+}
+.three {
+    margin-top: 2000px;
+}
+.four {
+    margin-top: 2000px;
+}
+.four a {
+    text-decoration: none;
+    background-color: red;
+    color: white;
+    padding: 5px;
+    font-weight: bold;
+    position: fixed;
+    right: 10px;
+    bottom: 30px;
+}
+/* The End */

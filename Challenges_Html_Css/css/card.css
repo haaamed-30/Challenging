@@ -1,0 +1,129 @@
+/* Start Global Rules */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* End Global Rules */
+/* Start Land */
+.land {
+    background-color: #e8e5e5;
+    width: 600px;
+    height: 600px;
+    margin: 20% auto;
+    position: relative; 
+    z-index: 1;
+}
+.land img {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%);
+}
+/* End Land */
+/* Start card */
+.card {
+    width: 450px;
+    height: 350px;
+    background-color: #fff;
+    position: absolute;
+    top: 27%;
+    left: 50%;
+    transform: translate(-225px, 7px);
+    z-index: -1;
+    border-radius: 10px;
+}
+.card::after {
+    content: "A+";
+    background-color: #3b75ba;
+    color: white;
+    font-weight: bold;
+    padding: 8px;
+    border-radius: 4px;
+    font-size: 18px;
+    position: absolute;
+    right: 20px;
+    bottom: -16px;
+}
+.card h2 {
+    text-align: center;
+    color: #3b75ba;
+    margin-top: 35px;
+    letter-spacing: -2px;
+    font-size: 30px;
+}
+.card span {
+    position: relative;
+    left: 135px;
+    top: 10px;
+    color: #a0a0a0;
+}
+.socali {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 420px;
+    height: 200px;
+    margin: 20px;
+    border-top: 1px solid #eee;
+    margin-top: 30px;
+}
+.socali .facebook {
+    display: flex;
+    align-self: end;
+    background-color: #e8e5e5;
+    width: 420px;
+    height: 50px;
+    align-items: center;
+    padding: 10px 20px;
+    margin: 0 5px 5px -5px;
+}
+.socali .facebook p:first-of-type {
+    position: absolute;
+    left: 25px;
+}
+.socali .facebook p:last-child {
+    position: absolute;
+    right: 25px;
+}
+.socali .twitter {
+    display: flex;
+    align-self: end;
+    background-color: #e8e5e5;
+    width: 420px;
+    height: 50px;
+    align-items: center;
+    padding: 10px 20px;
+    margin: 0 5px 5px -5px;
+}
+.socali .twitter p:first-child {
+    position: absolute;
+    left: 25px;
+}
+.socali .twitter p:last-of-type {
+    position: absolute;
+    right: 25px;
+} 
+.socali .linkedin {
+    display: flex;
+    align-self: end;
+    background-color: #e8e5e5;
+    width: 420px;
+    height: 50px;
+    align-items: center;
+    padding: 10px 20px;
+    margin: 0 5px 0 -5px;
+}
+.socali .linkedin p:first-child {
+    position: absolute;
+    left: 25px;
+}
+.socali .linkedin p:last-child {
+    position: absolute;
+    right: 25px;
+}
+/* End card */

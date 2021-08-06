@@ -1,0 +1,205 @@
+/* The Global Rules */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: sans-serif;
+    background-color: #333;
+}
+.companins {
+    background-color: #fff;
+    padding: 10px;
+    margin: 20px auto;
+    width: 800px;
+}
+/* The End */
+/* Header */
+header {
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 210px;
+}
+header .image {
+    flex-basis: 40%;
+    position: relative;
+}
+header .image::after {
+    content: "";
+    height: 112%;
+    border-right: #eee solid 1px;
+    position: absolute;
+    left: 200px;
+    top: -11px;
+}
+header .image img {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+    border: 4px solid #eee;
+    position: absolute;
+    left: 15%;
+}
+header .image h3 {
+    position: absolute;
+    left: 22%;
+    top: 115px;
+    font-size: 18px;
+    margin-top: 6px;
+}
+header .image h3::before {
+    content: "";
+    width: 180px;
+    height: 16px;
+    background-color: #eee;
+    position: absolute;
+    top: 22px;
+    left: -55px;
+    border-radius: 6px;
+    margin: 2px 0 2px;
+}
+header .image h3::after {
+    content: "";
+    width: 135px;
+    height: 16px;
+    background-color: #009688;
+    position: absolute;
+    top: 22px;
+    left: -55px;
+    border-radius: 6px;
+    margin: 2px 0 2px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0;
+}
+header .image p {
+    position: absolute;
+    top: 156px;
+    left: 10%;
+    font-size: 12px;
+    margin-top: 10px;
+}
+header .image span {
+    font-weight: bold;
+    color: #009688;
+}
+
+header h1 {
+    position: absolute;
+    top: 10px;
+    right: 50%;
+    font-size: 25px;
+    margin-top: 5px;
+}
+header p {
+    position: absolute;
+    top: 45px;
+    left: 227px;
+    font-size: 15px;
+    line-height: 2;
+    font-weight: normal;
+    padding: 5px;
+    width: 555px;
+    margin-top: 5px;
+    color: #8a8a8ab5;
+}
+header p:not(header .image p)::after {
+    content: "140 Days in The Ship";
+    position: absolute;
+    top: 130px;
+    right: 0;
+    font-size: 14px;
+}
+/* The End */
+/* Section */
+section .points {
+    display: flex;
+    flex-direction: column;
+}
+section h2 {
+    margin: 10px;
+    background-color: #607d8b;
+    color: #fff;
+    width: fit-content;
+    padding: 10px;
+    font-size: 20px;
+}
+section .points p:not(span) {
+    margin: 5px;
+    font-size: 15px;
+    border-bottom: 1px solid #eee;
+    padding: 5px 0 15px;
+    color: #8a8a8ab4;
+    margin-left: 10px;
+    text-transform: capitalize;
+}
+section .points p strong {
+    color: #000000b3;
+}
+section .points p:last-child {
+    border: none;
+}
+section .points span {
+    color: #009688;
+    font-weight: bold;
+}
+section .trophies .photo {
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-evenly;
+    margin-left: 6px;
+}
+section .trophies .photo .cover {
+    position: relative;
+}
+section .trophies .photo .cover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #ffffffdb;
+    width: 60px;
+    height: 60px;
+}
+section .trophies .photo img {
+    width: 60px;
+    height: 60px;
+    margin: 0 0 4px;
+    border: 1px solid;
+}
+section .ladder p {
+    font-size: 18px;
+    color: #8a8a8ab5;
+    padding: 5px 0 15px;
+    margin-left: 10px;
+    text-transform: capitalize;
+}
+section .ladder span:first-child {
+    color: #f44336;
+    font-weight: bold;
+}
+section .ladder span:last-child {
+    color: #2196f3;
+    font-weight: bold;
+}
+section .power {
+    display: flex;
+    flex-direction: column;
+}
+section .power p {
+    margin: 5px;
+    font-size: 15px;
+    border-bottom: 1px solid #eee;
+    padding: 5px 0 15px;
+    opacity: 50%;
+    margin-left: 10px;
+    text-transform: capitalize;
+}
+section .power p:last-child {
+    border: none;
+}
+/* The End */
