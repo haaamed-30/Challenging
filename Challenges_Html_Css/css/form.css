@@ -1,0 +1,104 @@
+/* The Global Rules */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* End */
+div {
+    width: 700px;
+    height: 320px;
+    background-color: #fdf3f3;
+    margin: 25% auto;
+    position: relative;
+    padding: 20px;
+    display: flex;
+}
+@media (max-width: 767px) {
+    div {
+        width: 100%;
+    }
+}
+div form {
+    display: flex;
+    flex-flow: column wrap;
+    margin: 10px;
+}
+@media (max-width: 767px) {
+    div form {
+        margin-left: -5px;
+        margin-top: 20px;
+    }
+}
+div form input {
+    width: 310px;
+    height: 35px;
+    margin-bottom: 5px;
+    border: none;
+    border-bottom: 1px solid rgb(172, 164, 164);
+    border-radius: 5px;
+    padding-left: 10px;
+    color: rgba(238, 238, 238, 0.164);
+}
+@media (max-width: 767px) {
+    div form input {
+        width: 155px; 
+        
+    }
+    div form input::placeholder {
+        color: #fff;
+    }
+}
+div form input:focus {
+    outline: none;
+}
+div form label {
+    padding-bottom: 5px;
+    font-size: 15px;
+    color: #4a4848;
+}
+label:not(.phone, .brieft):after {
+    content: "*";
+    padding-left: 3px;
+    color: red;
+}
+#phone, .phone {
+    margin-left: 30px;
+}
+#brieft, .brieft {
+    margin-left: 30px;
+    
+}
+#brieft {
+    border-radius: 5px;
+    border: none;
+    border-bottom: 1px solid rgb(172, 164, 164);
+    width: 310px;
+    height: 115px;
+}
+@media (max-width: 767px) {
+    #brieft {
+        width: 155px;
+    }
+}
+button {
+    position: absolute;
+    bottom: 20px;
+    right: 3%;
+    width: 650px;
+    height: 35px;
+    background-color: #009688;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+@media (max-width: 767px) {
+    button {
+        width: 340px;
+        right: 5%;
+    }
+}
