@@ -1,231 +1,260 @@
 /* Varuablees */
 :root {
-    --main-color: #01546B;
-    --scecondery-color: #0AC6FC;
-}
-/* End */
-/* Start Global Rules */
-* {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-}
-body {
-      font-family: sans-serif;
-}
-/* End  Global Rules */
-/* start header */
-header{
-      background-image: url("../images/background-01.jpeg");
-      background-size: cover;
-      background-position-x: center;
-      background-position-y: center;
-      height: 105vh;
-      width: 100%;
-      position: relative;
-}
-header::before {
-      content: "";
-      height: 100%;
-      width: 100%;
-      background-color: #00000085;
-      position: absolute;
-}
-header .bar {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      background-color: var(--main-color);
-      padding: 15px;
-      width: 1000px;
-      position: absolute;
-      top: 55px;
-      left: 15%;
-      color: #fff;
-}
-header .logo {
-      font-size: 25px;
-      font-weight: bold;
-      padding: 10px;
-      font-family: monospace;
-      cursor: pointer;
-}
-header ul {
-      display: flex;
-      justify-content: space-around;
-      width: 60%;
-      list-style: none;
-      line-height: 3.6;
-}
-header ul li {
-      text-transform: uppercase;
-      font-size: 15px;
-      cursor: pointer;
-      transition: 0.3s;
-      position: relative;
-}
-header ul li:hover {
-      color: var(--scecondery-color);
-}
-header ul .home {
-      color: var(--scecondery-color);
-}
-header ul .drop::before {
-      content: "";
-      border: 4px solid #FFFFFF;
-      border-bottom-color: transparent;
-      border-left-color: transparent;
-      border-right-color: transparent;
-      position: absolute;
-      left: -11px;
-      top: 26px;
-      transition: 0.9s
-}
-header ul .drop:hover:before {
-      border-color: var(--scecondery-color);
-      border-bottom-color: transparent;
-      border-left-color: transparent;
-      border-right-color: transparent;
-}
-header .page {
-      display: flex;
-      flex-direction: column;
-      position: absolute;
-      left: 42%;
-      top:139px;
-      background-color: #03a9f473;
-      color: #FFFFFF;
-      display: none;
-}
-header .page .page-one {
-      display: grid;
-      grid-template-columns: 1fr;
-      width: 180px;
-      text-align: inherit;
-
-}
-header .page .page-one li {
-      font-size: 15px;
-      border-bottom: 1px solid #0ac6fc7a;
-      width: 100%;
-      padding-left: 10px;
-      text-transform: capitalize;
-      line-height: 2.5;
-      transition: 0.4s;
-
-}
-header .page .page-one li:hover {
-      background-color: var(--scecondery-color);
-      color: #FFFFFF;
-}
-header .page .page-one li:last-child {
-      border: none;
-}
-header .dowen {
-      display: flex;
-      flex-direction: column;
-      position: absolute;
-      left: 48%;
-      top:139px;
-      background-color: #03a9f473;
-      color: #FFFFFF;
-}
-header .dowen .dowen-one {
-      display: grid;
-      grid-template-columns: 1fr;
-      width: 180px;
-      text-align: inherit;
-}
-header .dowen .dowen-one li {
-      font-size: 15px;
-      border-bottom: 1px solid #0ac6fc7a;
-      width: 100%;
-      padding-left: 15px;
-      text-transform: capitalize;
-      line-height: 2.5;
-      transition: 0.4s;
-      display: none;
-}
-header .dowen .dowen-one li:hover {
-      background-color: var(--scecondery-color);
-      color: #FFFFFF;
-}
-header .dowen .dowen-one li:last-child {
-      border: none;
-}
-header .dowen .dowen-two {
-      position: relative;
-}
-header .dowen .dowen-two::before {
-      content: "";
-      border: 4px solid #FFFFFF;
-      border-bottom-color: transparent;
-      border-left-color: transparent;
-      border-right-color: transparent;
-      position: absolute;
-      left: 4px;
-      top: 20px;
-}
-header .dowen .dowen-three {
-      display: flex;
-      flex-direction: column;
-      position: absolute;
-      left: 100%;
-      top: 0px;
-      background-color: #03a9f473;
-      width: inherit;
-}
-header .dowen .dowen-three li {
-      padding-left: 10px;
-      display: none;
-}
-header .text {
-      display: flex;
-      flex-direction: column;
-      position: absolute;
-      top: 55%;
-      left: 15%;
-      width: 100%;
-      color: #fff;
-}
-header .text h1 {
-      font-size: 75px;
-      margin-bottom: 20px;
-      font-family: emoji;
-}
-header .text p {
-      font-size: 17px;
-      width: 640px;
-      margin-bottom: 50px;
-      line-height: 1.6;
-      font-family: emoji;
-}
-header .buttn button:first-child {
-      padding: 13px 25px;
-      border-radius: 18px;
-      font-size: 15px;
-      background-color: var(--scecondery-color);
-      color: #fff;
-      margin-right: 15px;
-      border: 1px solid;
-      cursor: pointer;
-      transition: 0.3s
-}
-header .buttn button:first-child:hover {
-      background-color: transparent;
-}
-header .buttn button:last-child {
-      padding: 13px 25px;
-      border-radius: 18px;
-      font-size: 15px;
-      background-color: transparent;
-      color: #fff;
-      margin-right: 5px;
-      border: 1px solid;
-      cursor: pointer;
-      transition: 0.3s
-}
-header .buttn button:last-child:hover {
-      background-color: var(--scecondery-color);
-}
-/* end header */
+      --main-color: #01546B;
+      --scecondery-color: #0AC6FC;
+  }
+  /* End */
+  /* Start Global Rules */
+  * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+  }
+  body {
+        font-family: sans-serif;
+  }
+  /* End  Global Rules */
+  /* start header */
+  header{
+        background-image: url("../images/background-01.jpeg");
+        background-size: cover;
+        background-position-x: center;
+        background-position-y: center;
+        height: 105vh;
+        width: 100%;
+        position: relative;
+  }
+  header::before {
+        content: "";
+        height: 100%;
+        width: 100%;
+        background-color: #00000085;
+        position: absolute;
+  }
+  header .bar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: var(--main-color);
+        padding: 10px 15px 0;
+        width: 1000px;
+        position: absolute;
+        top: 55px;
+        left: 15%;
+        color: #fff;
+  }
+  header .logo {
+        font-size: 25px;
+        font-weight: bold;
+        padding: 10px;
+        font-family: monospace;
+        cursor: pointer;
+  }
+  /* Start Navegtion */
+  header nav {
+        display: flex;
+        width: 60%;
+        line-height: 3.6;
+  }
+  header nav ul {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        list-style: none;
+  }
+  header nav ul li {
+        text-transform: uppercase;
+        font-size: 15px;
+        cursor: pointer;
+        transition: 0.3s;
+        position: relative;
+  }
+  header nav ul li:hover {
+        color: var(--scecondery-color);
+  }
+  header nav ul .home {
+        color: var(--scecondery-color);
+  }
+  /* header nav ul .drop {
+  
+  } */
+  header nav ul .drop::before {
+        content: "";
+        border: 4px solid #FFFFFF;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+        border-right-color: transparent;
+        position: absolute;
+        left: -11px;
+        top: 26px;
+        transition: 0.9s
+  }
+  header nav ul .drop:hover:before {
+        border-color: var(--scecondery-color);
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+        border-right-color: transparent;
+  }
+  /* Start PAGE Drop Dowen Hovering */
+  header .page {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        left: -21%;
+        top: 54px;
+        background-color: #03a9f473;
+        color: #FFFFFF;
+  
+  }
+  header .page .page-one {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 180px;
+        text-align: inherit;
+  
+  }
+  header .page .page-one li {
+        font-size: 15px;
+        border-bottom: 1px solid #0ac6fc2e;
+        width: 100%;
+        padding-left: 15px;
+        text-transform: capitalize;
+        line-height: 2.5;
+        transition: 0.4s;
+        display: none;
+  }
+  header nav ul .drop:hover .page .page-one li {
+        display: block;
+  }
+  /* End PAGE Drop Dowen Hovering */
+  header .page .page-one li:hover {
+        background-color: var(--scecondery-color);
+        color: #FFFFFF;
+  }
+  header .page .page-one li:last-child {
+        border: none;
+  }
+  /* Start DROPDOWEN Hovering */
+  header .dowen {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        left: -6%;
+        top: 54px;
+        background-color: #03a9f473;
+        color: #FFFFFF;
+        display: none;
+  }
+  
+  header nav ul .drop:hover .dowen {
+    display: block;
+  }
+  /* End DROPDOWEN Hovering */
+  header .dowen .dowen-one {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 180px;
+        text-align: inherit;
+  }
+  header .dowen .dowen-one li {
+        font-size: 15px;
+        border-bottom: 1px solid #0ac6fc2e;
+        width: 100%;
+        padding-left: 15px;
+        text-transform: capitalize;
+        line-height: 2.5;
+        transition: 0.4s;
+  
+  }
+  header .dowen .dowen-one li:hover {
+        background-color: var(--scecondery-color);
+        color: #FFFFFF;
+  }
+  header .dowen .dowen-one li:last-child {
+        border: none;
+  }
+  header .dowen .dowen-two {
+        position: relative;
+  }
+  header .dowen .dowen-two::before {
+        content: "";
+        border: 4px solid #FFFFFF;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+        border-right-color: transparent;
+        position: absolute;
+        left: 4px;
+        top: 20px;
+  }
+  /* Start last-dowe Drop by hovering */
+  header .dowen .last-dowen .dowen-three {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        left: 100%;
+        top: 0px;
+        background-color: #03a9f473;
+        width: 100%;
+        display: none;
+  }
+  header .dowen .last-dowen .dowen-three li {
+        padding-left: 10px;
+  
+  }
+  header .dowen .dowen-two:hover .last-dowen .dowen-three {
+        display:block;
+  }
+  /* End last-dowe Drop hovering */
+  /* End Navegtion */
+  /* Start Text & Button */
+  header .text {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 55%;
+        left: 15%;
+        width: 100%;
+        color: #fff;
+  }
+  header .text h1 {
+        font-size: 75px;
+        margin-bottom: 20px;
+        font-family: emoji;
+  }
+  header .text p {
+        font-size: 17px;
+        width: 640px;
+        margin-bottom: 50px;
+        line-height: 1.6;
+        font-family: emoji;
+  }
+  header .buttn button:first-child {
+        padding: 13px 25px;
+        border-radius: 18px;
+        font-size: 15px;
+        background-color: var(--scecondery-color);
+        color: #fff;
+        margin-right: 15px;
+        border: 1px solid;
+        cursor: pointer;
+        transition: 0.3s
+  }
+  header .buttn button:first-child:hover {
+        background-color: transparent;
+  }
+  header .buttn button:last-child {
+        padding: 13px 25px;
+        border-radius: 18px;
+        font-size: 15px;
+        background-color: transparent;
+        color: #fff;
+        margin-right: 5px;
+        border: 1px solid;
+        cursor: pointer;
+        transition: 0.3s
+  }
+  header .buttn button:last-child:hover {
+        background-color: var(--scecondery-color);
+  }
+  /* End Text & Button */
+  /* end header */
